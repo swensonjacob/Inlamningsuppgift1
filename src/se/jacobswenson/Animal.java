@@ -39,7 +39,7 @@ public abstract class Animal {
     /**
      Returnerar ingående String formaterad så den börjar med stor bokstav.
      */
-    public String capitalize(String str) {
+    private String capitalize(String str) {
         return str.substring(0, 1).toUpperCase() + str.substring(1);
     }
 
