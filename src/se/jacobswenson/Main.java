@@ -3,8 +3,20 @@ package se.jacobswenson;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("klart!");
-        System.out.println("Yees");
-        System.out.println("Så ja");
+        Hotel hotel = new Hotel();
+        Message message = new Message();
+
+        while (true) {
+            try {
+                hotel.inputPrintAnimal();
+                break;
+
+            } catch (NullPointerException e) {
+                message.errorMessage();
+            }
+        }
+
     }
+
 }
+
