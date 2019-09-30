@@ -39,11 +39,10 @@ public class Hotel {
      Skapar dialogruta för input, återfinns inmatat namn i listan över hotellets djur skapas infomeddelande,
      annars felsignal.
      */
-    public void inputPrintAnimal() {
-        Message message = new Message();
-        Animal animal = getAnimal(message.inputMessage());
+    public void getFoodInformation() {
+        Animal animal = getAnimal(Output.nameQuestion());
         if (animal != null) {
-            message.informationMessage(animal);
+            Output.foodInformation(animal);
         } else {
             throw new NullPointerException("Felaktigt angivet namn");
         }
