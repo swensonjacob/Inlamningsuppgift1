@@ -7,9 +7,9 @@ public class Dog extends Animal implements IFoodCalc {
     /**
      * Konstruktor.
      */
-    public Dog(Name name, double weightInGram) {
-        super(name, weightInGram);
-        this.foodPortion = setFoodPortion(weightInGram);
+    public Dog(Name name) {
+        super(name);
+        this.foodPortion = setFoodPortion(super.getWeight());
     }
 
     /**
@@ -21,27 +21,11 @@ public class Dog extends Animal implements IFoodCalc {
     }
 
     /**
-     * Hämtar djurets namn från superklassen
-     */
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    /**
-     * Returnerar formaterad portionsstorlek.
-     */
-    @Override
-    public String portionToString(double portion) {
-        return super.portionToString(portion);
-    }
-
-    /**
      * Skapar String med information om djurets portionsstorlek
      */
     @Override
     public String getFoodPortionMessage() {
-        return getName() + " äter " + portionToString(this.foodPortion) + " gram hundfoder";
+        return super.getName() + " äter " + super.portionToString(this.foodPortion) + " gram hundfoder";
     }
 
 }

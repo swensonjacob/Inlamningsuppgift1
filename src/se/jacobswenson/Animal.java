@@ -8,9 +8,9 @@ public abstract class Animal {
     /**
      Konstruktor.
      */
-    public Animal(Name name, double weight) {
+    public Animal(Name name) {
         this.name = name;
-        this.weight = weight;
+        this.weight = name.getWeightInGram();
     }
 
     /**
@@ -18,6 +18,12 @@ public abstract class Animal {
      */
     public String getName() {
         return capitalize(name.toString().toLowerCase());
+    }
+    /**
+     Hämtar djurets vikt.
+     */
+    public double getWeight() {
+        return weight;
     }
 
     /**

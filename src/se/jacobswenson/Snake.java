@@ -7,25 +7,9 @@ public class Snake extends Animal {
     /**
      * Konstruktor.
      */
-    public Snake(Name names, double weightInGram) {
-        super(names, weightInGram);
+    public Snake(Name name) {
+        super(name);
         this.foodPortion = 20;
-    }
-
-    /**
-     * Hämtar djurets namn från superklassen
-     */
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    /**
-     * Returnerar formaterad portionsstorlek.
-     */
-    @Override
-    public String portionToString(double portion) {
-        return super.portionToString(portion);
     }
 
     /**
@@ -33,6 +17,6 @@ public class Snake extends Animal {
      */
     @Override
     public String getFoodPortionMessage() {
-        return getName() + " äter " + portionToString(this.foodPortion) + " gram ormpellets";
+        return super.getName() + " äter " + super.portionToString(this.foodPortion) + " gram ormpellets";
     }
 }

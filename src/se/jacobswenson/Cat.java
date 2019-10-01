@@ -7,9 +7,9 @@ public class Cat extends Animal implements IFoodCalc {
     /**
      * Konstruktor.
      */
-    public Cat(Name name, double weightInGram) {
-        super(name, weightInGram);
-        this.foodPortion = setFoodPortion(weightInGram);
+    public Cat(Name name) {
+        super(name);
+        this.foodPortion = setFoodPortion(super.getWeight());
     }
 
     /**
@@ -21,26 +21,10 @@ public class Cat extends Animal implements IFoodCalc {
     }
 
     /**
-     * Hämtar djurets namn från superklassen
-     */
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    /**
-     * Returnerar formaterad portionsstorlek.
-     */
-    @Override
-    public String portionToString(double portion) {
-        return super.portionToString(portion);
-    }
-
-    /**
      * Skapar String med information om djurets portionsstorlek
      */
     @Override
     public String getFoodPortionMessage() {
-        return getName() + " äter " + portionToString(this.foodPortion) + " gram kattfoder";
+        return super.getName() + " äter " + super.portionToString(this.foodPortion) + " gram kattfoder";
     }
 }

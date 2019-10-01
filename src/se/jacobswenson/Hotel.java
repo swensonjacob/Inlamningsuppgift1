@@ -15,11 +15,11 @@ public class Hotel {
     public Hotel() {
         this.animals = new ArrayList<>();
 
-        animals.add(new Dog(Name.SIXTEN, 5000));
-        animals.add(new Dog(Name.DOGGE, 10000));
-        animals.add(new Cat(Name.VENUS, 5000));
-        animals.add(new Cat(Name.OVE, 3000));
-        animals.add(new Snake(Name.HYPNO, 1000));
+        animals.add(new Dog(Name.SIXTEN));
+        animals.add(new Dog(Name.DOGGE));
+        animals.add(new Cat(Name.VENUS));
+        animals.add(new Cat(Name.OVE));
+        animals.add(new Snake(Name.HYPNO));
     }
 
     /**
