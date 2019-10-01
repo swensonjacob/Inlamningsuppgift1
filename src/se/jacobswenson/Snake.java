@@ -5,7 +5,7 @@ public class Snake extends Animal {
     private double foodPortion;
 
     /**
-     Konstruktor.
+     * Konstruktor.
      */
     public Snake(Name names, double weightInGram) {
         super(names, weightInGram);
@@ -13,7 +13,7 @@ public class Snake extends Animal {
     }
 
     /**
-     Hämtar djurets namn från superklassen
+     * Hämtar djurets namn från superklassen
      */
     @Override
     public String getName() {
@@ -21,7 +21,7 @@ public class Snake extends Animal {
     }
 
     /**
-     Returnerar formaterad portionsstorlek.
+     * Returnerar formaterad portionsstorlek.
      */
     @Override
     public String portionToString(double portion) {
@@ -29,7 +29,7 @@ public class Snake extends Animal {
     }
 
     /**
-     Skapar String med information om djurets portionsstorlek
+     * Skapar String med information om djurets portionsstorlek
      */
     @Override
     public String getFoodPortionMessage() {

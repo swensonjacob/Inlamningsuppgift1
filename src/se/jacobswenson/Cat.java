@@ -5,7 +5,7 @@ public class Cat extends Animal implements IFoodCalc {
     private double foodPortion;
 
     /**
-     Konstruktor.
+     * Konstruktor.
      */
     public Cat(Name name, double weightInGram) {
         super(name, weightInGram);
@@ -13,7 +13,7 @@ public class Cat extends Animal implements IFoodCalc {
     }
 
     /**
-     Beräkning av portionsstorlek från interface IFoodCalc
+     * Beräkning av portionsstorlek från interface IFoodCalc
      */
     @Override
     public double setFoodPortion(double weight) {
@@ -21,7 +21,7 @@ public class Cat extends Animal implements IFoodCalc {
     }
 
     /**
-     Hämtar djurets namn från superklassen
+     * Hämtar djurets namn från superklassen
      */
     @Override
     public String getName() {
@@ -29,7 +29,7 @@ public class Cat extends Animal implements IFoodCalc {
     }
 
     /**
-     Returnerar formaterad portionsstorlek.
+     * Returnerar formaterad portionsstorlek.
      */
     @Override
     public String portionToString(double portion) {
@@ -37,7 +37,7 @@ public class Cat extends Animal implements IFoodCalc {
     }
 
     /**
-     Skapar String med information om djurets portionsstorlek
+     * Skapar String med information om djurets portionsstorlek
      */
     @Override
     public String getFoodPortionMessage() {
