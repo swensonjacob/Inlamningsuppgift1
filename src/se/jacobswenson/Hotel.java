@@ -28,7 +28,7 @@ public class Hotel {
      */
     private Animal getAnimal(String name) {
         for (Animal animal : this.animals) {
-            if (name.toLowerCase().equals(animal.getName().toLowerCase())) {
+            if (name.equalsIgnoreCase(animal.getName())) {
                 return animal;
             }
         }

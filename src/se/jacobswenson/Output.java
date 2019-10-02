@@ -8,7 +8,7 @@ public class Output {
      * Dialogruta för inmatande av djurnamn.
      */
     public static String nameQuestion() {
-        String input = JOptionPane.showInputDialog(null, "Ange namn på djuret som skall få mat: ",
+        String input = JOptionPane.showInputDialog(null, "Vilket djur ska få mat?",
                 "HealthyPets", JOptionPane.PLAIN_MESSAGE);
         if (input == null) {
             System.exit(0);
