@@ -2,7 +2,6 @@ package se.jacobswenson;
 
 public class Cat extends Animal implements IFoodCalc {
 
-    private static double weightDivider = 150;
     private double foodPortion;
 
     /**
@@ -18,6 +17,7 @@ public class Cat extends Animal implements IFoodCalc {
      */
     @Override
     public double setFoodPortion() {
+        double weightDivider = 150;
         return super.getWeight() / weightDivider;
     }
 
